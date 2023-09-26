@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "Cabinet-Grotesk";
+  src: url("../../vendor/fonts/CabinetGrotesk-Bold.woff") format("woff"), url("../../vendor/fonts/CabinetGrotesk-Bold.woff2") format("woff2");
+}
+.modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0 19px;
+  transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+}
+
+.modal__container {
+  width: auto;
+  height: auto;
+  background: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal__songcard-popup-image {
+  height: 400px;
+  width: 400px;
+  max-width: 75vw;
+  max-height: 75vh;
+  object-fit: cover;
+  border-top-right-radius: 19px;
+  border-top-left-radius: 19px;
+}
+
+.modal__songcard-popup-close {
+  background-image: url("../../images/popup-close-icon.svg");
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: calc(87%);
+  left: calc(87%);
+  border: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgba(59, 75, 59, 0.5);
+  cursor: pointer;
+}
+
+.modal__songcard-popup-close:hover {
+  opacity: 0.6;
+  transition: opacity 0.2s linear;
+}
+
+.modal__songcard-popup-caption {
+  position: absolute;
+  padding-top: 30px;
+  width: 400px;
+  max-width: 75vw;
+  background-color: #fff;
+  left: 0;
+  top: calc(90%);
+  border-bottom-left-radius: 19px;
+  border-bottom-right-radius: 19px;
+  z-index: -1;
+}
+
+.modal__songcard-popup-text {
+  margin-left: 10px;
+  color: #000000;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Cabinet-Grotesk", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .modal__songcard-popup-close {
+    width: 20px;
+    height: 20px;
+  }
+
+  .modal__songcard-popup-text {
+    font-size: 14px;
+  }
+}
