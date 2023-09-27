@@ -4,3 +4,28 @@
   flex-wrap: wrap;
   background-color: rgb(0, 0, 0);
 }
+
+.songs__show-more-container {
+  display: flex;
+  margin: 0px;
+  background-color: rgb(0, 0, 0);
+}
+
+.songs__show-more-button {
+  margin: 10px auto;
+  padding: 5px;
+  border-radius: 20px;
+  border: 1px;
+  color: #000000;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Cabinet-Grotesk", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.songs__show-more-button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}

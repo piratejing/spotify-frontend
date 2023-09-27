@@ -69,7 +69,7 @@ class Spotify {
     return await result.json();
   }
 
-  // Get the top songs for the logged in user
+  // Get the top artists for the logged in user
   async topArtists() {
     const res = await this.get("me/top/artists");
     return res?.items?.map((item) => {

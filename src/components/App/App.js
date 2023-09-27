@@ -13,6 +13,11 @@ function App() {
   const [username, setUserName] = useState("");
   const [activeModal, setActiveModal] = useState(null);
   const [profileImage, setProfileImage] = useState("");
+  const [visibleSongs, setVisibleSongs] = useState(2);
+
+  const showMore = () => {
+    setVisibleSongs((prevVisibleSongs) => prevVisibleSongs + 2);
+  };
 
   const selectSong = (song) => {
     setActiveModal(song);
@@ -69,10 +74,20 @@ function App() {
             <Main loggedIn={loggedIn} profileImage={profileImage} />
           </Route>
           <Route path="/top-songs">
-            <TopSongs selectSong={selectSong} />
+            <TopSongs
+              selectSong={selectSong}
+              onClick={() => setVisibleSongs((prevVisibleSongs) => prevVisibleSongs + 2)}
+              visibleSongs={visibleSongs}
+              showMore={showMore}
+            />
           </Route>
           <Route path="/top-10-recommend">
-            <Recommended selectSong={selectSong} />
+            <Recommended
+              selectSong={selectSong}
+              onClick={() => setVisibleSongs((prevVisibleSongs) => prevVisibleSongs + 2)}
+              visibleSongs={visibleSongs}
+              showMore={showMore}
+            />
           </Route>
         </Switch>
         {activeModal ? <SongModal song={activeModal} onClose={handleCloseModal} /> : ""}
