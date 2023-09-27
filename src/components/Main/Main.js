@@ -1,7 +1,6 @@
 import React from "react";
 import "./Main.css";
 import About from "../About/About";
-import TopSongs from "../TopSongs/TopSongs";
 import musicNote from "../../images/music-note.svg";
 import spotify from "../../utils/spotify";
 

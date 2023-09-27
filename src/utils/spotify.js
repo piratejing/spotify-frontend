@@ -6,12 +6,6 @@ const SCOPE = "user-read-private user-read-email user-top-read";
 const SPOTIFY_LOCAL_STORAGE_KEY = "spotify_token";
 const SPOTIFY_VERIFIER_STORAGE_KEY = "spotify_verifier";
 
-/**
- * Spotify API wrapper
- * Usage:
- *   const api = new Spotify();
- *   await api.login();
- */
 class Spotify {
   token = null;
   code = null;
