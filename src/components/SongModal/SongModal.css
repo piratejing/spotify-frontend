@@ -46,12 +46,13 @@
   background-size: contain;
   background-color: transparent;
   cursor: pointer;
+  filter: brightness(0.8);
 }
 
 .modal__songcard-popup-close:hover {
   opacity: 0.6;
-  transition: transform 0.5s ease;
-  transform: rotate(180deg);
+  transition: filter 0.5s ease;
+  filter: brightness(0.2);
 }
 
 .modal__songcard-popup-caption {

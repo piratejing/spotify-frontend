@@ -13,10 +13,10 @@ function App() {
   const [username, setUserName] = useState("");
   const [activeModal, setActiveModal] = useState(null);
   const [profileImage, setProfileImage] = useState("");
-  const [visibleSongs, setVisibleSongs] = useState(2);
+  const [visibleSongs, setVisibleSongs] = useState(3);
 
   const showMore = () => {
-    setVisibleSongs((prevVisibleSongs) => prevVisibleSongs + 2);
+    setVisibleSongs((prevVisibleSongs) => prevVisibleSongs + 3);
   };
 
   const selectSong = (song) => {
@@ -76,7 +76,7 @@ function App() {
           <Route path="/top-songs">
             <TopSongs
               selectSong={selectSong}
-              onClick={() => setVisibleSongs((prevVisibleSongs) => prevVisibleSongs + 2)}
+              onClick={() => setVisibleSongs((prevVisibleSongs) => prevVisibleSongs + 3)}
               visibleSongs={visibleSongs}
               showMore={showMore}
             />
@@ -84,7 +84,7 @@ function App() {
           <Route path="/top-10-recommend">
             <Recommended
               selectSong={selectSong}
-              onClick={() => setVisibleSongs((prevVisibleSongs) => prevVisibleSongs + 2)}
+              onClick={() => setVisibleSongs((prevVisibleSongs) => prevVisibleSongs + 3)}
               visibleSongs={visibleSongs}
               showMore={showMore}
             />
