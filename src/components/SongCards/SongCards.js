@@ -24,8 +24,8 @@ export default function SongCards({ className, api, selectSong, visibleSongs, sh
     return (
       <div className="error__message-container">
         <p className="error__message">
-          Sorry, something went wrong during the request. There may be a connection issue or the server may be down. Please try again later or return
-          to the main page and try to login again.
+          Apologies, an error occurred while processing your request. This could be due to a connectivity problem or server unavailability. Kindly
+          attempt your request later or navigate back to the main page and retry the login process.
         </p>
       </div>
     );
