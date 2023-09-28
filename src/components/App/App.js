@@ -7,6 +7,8 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import { Route, HashRouter, Switch } from "react-router-dom";
 import spotify from "../../utils/spotify";
+import "./App.css";
+import "../../vendor/fonts.css";
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -22,7 +24,6 @@ function App() {
   const selectSong = (song) => {
     setActiveModal(song);
   };
-
   useEffect(() => {
     const fetchUser = async () => {
       spotify.onLogIn = setLoggedIn;
@@ -35,24 +36,9 @@ function App() {
     };
     fetchUser();
   });
-
   const handleCloseModal = () => {
     setActiveModal(null);
   };
-
-  // Close modal popup with Escape key
-  useEffect(() => {
-    const closeByEscape = (e) => {
-      if (e.key === "Escape") {
-        handleCloseModal();
-      }
-    };
-
-    document.addEventListener("keydown", closeByEscape);
-
-    return () => document.removeEventListener("keydown", closeByEscape);
-  }, []);
-
   // Close modal popup with OutsideClick
   useEffect(() => {
     const closeByOutsideClick = (e) => {
@@ -61,10 +47,8 @@ function App() {
       }
     };
     document.addEventListener("mousedown", closeByOutsideClick);
-
     return () => document.removeEventListener("mousedown", closeByOutsideClick);
   }, []);
-
   return (
     <HashRouter>
       <div className="App">
@@ -96,5 +80,4 @@ function App() {
     </HashRouter>
   );
 }
-
 export default App;

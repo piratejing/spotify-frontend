@@ -1,8 +1,5 @@
-import React, { useEffect, useState } from "react";
 import "./Navigation.css";
 import { Link } from "react-router-dom";
-import spotify from "../../utils/spotify";
-
 export default function Navigation({ loggedIn, username }) {
   if (loggedIn) {
     return (
@@ -12,7 +9,7 @@ export default function Navigation({ loggedIn, username }) {
             {username}
           </Link>
           <Link to="/top-songs" className="navbar__link">
-            Top 12 Artists
+            Top 12 Tracks
           </Link>
           <Link to="/top-10-recommend" className="navbar__link">
             Top 12 Recommended

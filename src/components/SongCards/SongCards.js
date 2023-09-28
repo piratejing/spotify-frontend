@@ -6,14 +6,30 @@ import spotify from "../../utils/spotify";
 
 export default function SongCards({ className, api, selectSong, visibleSongs, showMore }) {
   const [songs, setSongs] = useState([]);
+  const [errorMessage, setErrorMessage] = useState(null);
 
   useEffect(() => {
     const fetchSongs = async () => {
-      const songs = await spotify[api]();
-      setSongs(songs || []);
+      try {
+        const songs = await spotify[api]();
+        setSongs(songs || []);
+      } catch (error) {
+        setErrorMessage(error.message);
+      }
     };
     fetchSongs();
-  }, []);
+  }, [api]);
+
+  if (errorMessage) {
+    return (
+      <div className="error__message-container">
+        <p className="error__message">
+          Sorry, something went wrong during the request. There may be a connection issue or the server may be down. Please try again later or return
+          to the main page and try to login again.
+        </p>
+      </div>
+    );
+  }
 
   if (!songs.length) {
     return Preloader();

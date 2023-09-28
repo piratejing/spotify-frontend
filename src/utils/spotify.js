@@ -66,20 +66,41 @@ class Spotify {
       method: "GET",
       headers: { Authorization: `Bearer ${this.token}` },
     });
-    return await result.json();
+    if (result.ok) {
+      return await result.json();
+    } else {
+      throw new Error(`error ${result.status}`);
+    }
   }
 
-  // Get the top artists for the logged in user
-  async topArtists() {
-    const res = await this.get("me/top/artists");
-    return res?.items?.map((item) => {
+  // Get the top tracks for the logged in user
+  async topTracks() {
+    const res = await this.get("me/top/tracks");
+    return res?.items?.map((track) => {
       return {
-        name: item.name,
-        image: item.images[0].url,
-        artist: item.name,
+        name: track.name,
+        image: track.album.images[0].url,
+        artist: track.artists.map((artist) => artist.name).join(", "),
       };
     });
   }
+
+  // async topArtists() {
+  //   // Call the new topTracks method to get top tracks
+  //   const tracks = await this.topTracks();
+  //   return tracks;
+  // }
+
+  // async topArtists() {
+  //   const res = await this.get("me/top/artists");
+  //   return res?.items?.map((item) => {
+  //     return {
+  //       name: item.name,
+  //       image: item.images[0].url,
+  //       artist: item.name,
+  //     };
+  //   });
+  // }
 
   async recommended() {
     const res = await this.get("recommendations?seed_genres=pop");

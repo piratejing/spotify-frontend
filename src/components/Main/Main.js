@@ -22,7 +22,7 @@ export default function Main({ loggedIn, profileImage }) {
       <div className="main">
         <img className="main__music-note" src={img}></img>
         {button}
-        <p className="main__caption">Login to Spotify to see your Top 10 Played Artists and get Recommendations based on your Top Artists</p>
+        <p className="main__caption">Login to Spotify to see your Top 12 Played Tracks and get Recommendations based on your Top Tracks</p>
       </div>
       <About />
     </div>

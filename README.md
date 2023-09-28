@@ -1,6 +1,19 @@
-<<<<<<< HEAD
-# spotify-frontend
-=======
+# Recommendations Spotify App
+
+# This project lets you login to your Spotify account and shows your Top 12 Artists and shows Top 12 Reommended Songs based on your Artists.
+
+# Recommendations Spotify App How-To
+
+1. Click on the Login button and log in to your Spotify Account. If you dont have a spotify account feel free to register for one It's Free! Come back to this App after you have played some of your favorite songs.
+
+2. After logging in to your Spotify Account, click the I Agree button.
+
+3. Navigation Links will appear in the top right of the App. It will show your Top 12 Songs and Top 12 Recommended Songs.
+
+4. The logo and your username will take you back to the Homepage where you can log out if desired.
+
+5. Clicking on each song card will open a modal that show details about the Artists and their Song.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -71,4 +84,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> ea0bb1c... markup jsx api

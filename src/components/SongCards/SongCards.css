@@ -3,6 +3,7 @@
   justify-content: center;
   flex-wrap: wrap;
   background-color: rgb(0, 0, 0);
+  gap: 15px;
 }
 
 .songs__show-more-container {
@@ -28,4 +29,11 @@
 .songs__show-more-button:hover {
   cursor: pointer;
   opacity: 0.6;
+}
+
+.error__message {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 20px;
 }
