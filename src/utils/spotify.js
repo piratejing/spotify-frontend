@@ -85,23 +85,6 @@ class Spotify {
     });
   }
 
-  // async topArtists() {
-  //   // Call the new topTracks method to get top tracks
-  //   const tracks = await this.topTracks();
-  //   return tracks;
-  // }
-
-  // async topArtists() {
-  //   const res = await this.get("me/top/artists");
-  //   return res?.items?.map((item) => {
-  //     return {
-  //       name: item.name,
-  //       image: item.images[0].url,
-  //       artist: item.name,
-  //     };
-  //   });
-  // }
-
   async recommended() {
     const res = await this.get("recommendations?seed_genres=pop");
     return res?.tracks?.map((track) => {
