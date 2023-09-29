@@ -29,8 +29,10 @@ function App() {
       spotify.onLogIn = setLoggedIn;
       await spotify.init();
       const profile = await spotify.profile();
-      if (profile?.display_name) {
-        setUserName(profile.display_name);
+      // debugger;
+      setUserName(profile?.display_name);
+
+      if (profile?.images.length > 0) {
         setProfileImage(profile.images[0].url);
       }
     };
