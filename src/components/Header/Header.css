@@ -8,16 +8,13 @@
 
 .header__icon {
   width: 50px;
+  min-width: 50px;
+  min-height: 50px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .header {
     padding: 20px;
     min-height: 20px;
-  }
-
-  .header__icon {
-    max-width: 50px;
-    max-height: 50px;
   }
 }

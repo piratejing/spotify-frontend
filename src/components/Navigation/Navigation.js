@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Navigation({ loggedIn, username }) {
   if (loggedIn) {
     return (
-      <div className="navbar">
+      <nav className="navbar">
         <div className="navbar__container">
           <Link to="/" className="navbar__link">
             {username}
@@ -15,7 +15,7 @@ export default function Navigation({ loggedIn, username }) {
             Top 12 Recommended
           </Link>
         </div>
-      </div>
+      </nav>
     );
   } else {
     return (

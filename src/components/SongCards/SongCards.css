@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   background-color: rgb(0, 0, 0);
   gap: 15px;
+  padding-top: 20px;
 }
 
 .songs__show-more-container {

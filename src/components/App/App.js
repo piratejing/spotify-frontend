@@ -41,6 +41,19 @@ function App() {
   const handleCloseModal = () => {
     setActiveModal(null);
   };
+
+  // Close modal popup with Escape key
+  useEffect(() => {
+    const closeByEscape = (e) => {
+      if (e.key === "Escape") {
+        handleCloseModal();
+      }
+    };
+
+    document.addEventListener("keydown", closeByEscape);
+
+    return () => document.removeEventListener("keydown", closeByEscape);
+  }, []);
   // Close modal popup with OutsideClick
   useEffect(() => {
     const closeByOutsideClick = (e) => {
@@ -53,7 +66,7 @@ function App() {
   }, []);
   return (
     <HashRouter>
-      <div className="App">
+      <div className="app">
         <Header loggedIn={loggedIn} username={username} />
         <Switch>
           <Route exact path="/">

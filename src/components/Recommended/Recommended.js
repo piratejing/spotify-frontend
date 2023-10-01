@@ -1,4 +1,3 @@
-import "./Recommended.css";
 import SongCards from "../SongCards/SongCards";
 
 export default function Recomended({ selectSong, showMore, visibleSongs }) {

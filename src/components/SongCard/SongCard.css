@@ -28,9 +28,10 @@
 }
 
 .song-card__name {
+  position: absolute;
   margin: auto;
   padding: 2px 12px;
-  width: fit-content;
+  width: 200px;
   color: rgba(0, 0, 0, 0.6);
   font-family: "Cabinet-Grotesk", Arial, Helvetica, sans-serif;
   font-style: normal;
