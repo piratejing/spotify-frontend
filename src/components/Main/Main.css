@@ -1,0 +1,39 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px;
+  background-color: rgb(0, 0, 0);
+}
+
+.main__music-note {
+  width: 80px;
+  padding: 30px;
+}
+
+.main__caption {
+  color: rgb(255, 255, 255);
+}
+
+.main__login {
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.main__login:hover {
+  cursor: pointer;
+}
+
+.main__login:visited {
+  color: black;
+}
+
+.main__caption {
+  margin: 0;
+  padding: 30px;
+}
