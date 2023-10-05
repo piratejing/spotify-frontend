@@ -1,6 +1,6 @@
 # Recommendations Spotify App
 
-# This project lets you login to your Spotify account and shows your Top 12 Artists and shows Top 12 Reommended Songs based on your Artists.
+# This project lets you login to your Spotify account and shows your Top 12 Tracks and shows Top 12 Reommended Songs based on your Tracks.
 
 # GitHub Pages Link
 
