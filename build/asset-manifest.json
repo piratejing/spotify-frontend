@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.76ec4e2c.css",
+    "main.js": "/static/js/main.f62612ca.js",
+    "static/js/787.0fe84981.chunk.js": "/static/js/787.0fe84981.chunk.js",
+    "static/media/CabinetGrotesk-Bold.woff": "/static/media/CabinetGrotesk-Bold.0fb1cbec860aa3537c32.woff",
+    "static/media/CabinetGrotesk-Medium.woff": "/static/media/CabinetGrotesk-Medium.1928499875b5b3682ea5.woff",
+    "static/media/CabinetGrotesk-Bold.woff2": "/static/media/CabinetGrotesk-Bold.c9c3bc30c44ade9d3b9b.woff2",
+    "static/media/CabinetGrotesk-Medium.woff2": "/static/media/CabinetGrotesk-Medium.467bcdaa2530ea758403.woff2",
+    "static/media/music-note.svg": "/static/media/music-note.ba3eb6bd7d6838228538b8bd545b35b1.svg",
+    "static/media/spotify-icon.svg": "/static/media/spotify-icon.5017cf1664eff772b580a4defe313c47.svg",
+    "static/media/popup-close-icon.svg": "/static/media/popup-close-icon.33bc5353dc8c138372ed.svg",
+    "index.html": "/index.html",
+    "main.76ec4e2c.css.map": "/static/css/main.76ec4e2c.css.map",
+    "main.f62612ca.js.map": "/static/js/main.f62612ca.js.map",
+    "787.0fe84981.chunk.js.map": "/static/js/787.0fe84981.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.76ec4e2c.css",
+    "static/js/main.f62612ca.js"
+  ]
+}
