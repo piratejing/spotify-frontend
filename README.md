@@ -9,7 +9,7 @@ Here is the link to the Recommendations Spotify App (https://piratejing.github.i
 # Recommendations Spotify App How-To
 
 1. Click on the Login button and log in to your Spotify Account. If you dont have a spotify account feel free to register for one It's Free! Come back to this App after you have played some of your favorite songs.
-   <img src="./src/images/spotifylogin.png"/>
+   <img src="./src/images/spotifylogin.png">
 
 2. After logging in to your Spotify Account, click the I Agree button.
    <img src="./src/images/spotifyiagree.png">
