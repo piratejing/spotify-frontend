@@ -1,5 +1,5 @@
 const CLIENT_ID = "2b4eaa7504444768a304059a1bc8955e";
-const REDIRECT_URL = window.location;
+const REDIRECT_URL = window.location.origin;
 const SPOTIFY_URL = "https://api.spotify.com/v1/";
 const SCOPE = "user-read-private user-read-email user-top-read";
 
