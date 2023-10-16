@@ -2,6 +2,10 @@
 
 # This project lets you login to your Spotify account and shows your Top 12 Tracks and shows Top 12 Reommended Songs based on your Tracks.
 
+This Spotify App is in development mode and requires the Spotify users email to be added to the user management to access. Feel free to use this log in to test the app.
+email: spotifyapptest41@gmail.com
+password: spotifyapptest41!
+
 # Recommendations Spotify App How-To
 
 1. Click on the Login button and log in to your Spotify Account. If you dont have a spotify account feel free to register for one It's Free! Come back to this App after you have played some of your favorite songs.
