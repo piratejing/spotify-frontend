@@ -8,6 +8,8 @@ This Spotify App is in development mode and requires the Spotify users email to 
 email: spotifyapptest41@gmail.com<br>
 password: spotifyapptest41!
 
+- [Project Live][(https://aroundus.surge.sh/](https://spotify-frontend-smoky.vercel.app/#/))
+
 # Recommendations Spotify App How-To
 
 1. Click on the Login button and log in to your Spotify Account. If you dont have a spotify account feel free to register for one It's Free! Come back to this App after you have played some of your favorite songs.
