@@ -4,11 +4,10 @@
 
 This Spotify App is in development mode and requires the Spotify users email to be added to the user management to access. Feel free to use this log in to test the app.
 
-
 email: spotifyapptest41@gmail.com<br>
 password: spotifyapptest41!
 
-- [Project Live][(https://aroundus.surge.sh/](https://spotify-frontend-smoky.vercel.app/#/))
+- [Project Live](https://spotify-frontend-smoky.vercel.app/#/)
 
 # Recommendations Spotify App How-To
 
